@@ -1,0 +1,440 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+}
+
+body {
+    background-color: var(--white);
+}
+
+:root {
+    --dark: #000;
+    --blue-highlight-text: #e427ea;
+    --darker-blue: #3a063b;
+    --light-blue: #ee28e4;
+    --blue-shade: #32496B;
+    --white: #fff;
+    --border: #e6ecf8;
+    --shadow: #191919;
+}
+
+.e-lio {
+    color: var(--darker-blue);
+}
+
+body {
+    margin: 0;
+}
+
+/*Beginning of navigation bar*/
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8% 0 8%;
+/*box-sizing border box allows all the different divs to have border of the same size*/
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+    background: var(--white);
+    z-index: 10;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 1.25rem;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+}
+
+
+header a:hover {
+    background-color: var(--darker-blue);
+    color: var(--white);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    margin: 5px;
+    border-color: var(--darker-blue);
+}
+
+.btn {
+    background-color: var(--darker-blue);
+    text-decoration: none;
+    color: white;
+    border: solid;
+    border-color: transparent;
+    border-radius: 3px;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.btn:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px var(--light-blue), 0 0 20px var(--blue-shade);
+    outline-color: var(--blue-highlight-text);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px var(--blue-shade);
+}
+
+/*Home Section*/
+.home-banner {
+    display: flex;
+
+}
+
+.home-banner img {
+    justify-content: center;
+    width: 100%;
+}
+
+/*Beginning of About Me section*/
+.about-grid-container {
+    display: flex;
+}
+
+.about-child-one {
+    flex: 60%;
+    line-height: 1.5;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.about-child-two {
+    flex: 40%;
+}
+
+.icon-img {
+    width: 400px;
+    height: auto;
+    padding-top: 5%;
+    display: block;
+    margin: auto;
+}
+
+.about-child-two img {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.about-info {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 3px var(--border);
+}
+
+.about-title {
+    font-size: 2rem;
+    color: var(--darker-blue);
+    text-shadow: 2px 2px 3px var(--border);
+}
+
+/*Skillset Section*/
+.skill-parent-container {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    background: var(--darker-blue);
+}
+
+.skill-child-container1 {
+    flex: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.skill-child-container2 {
+    flex: 40%;
+}
+
+.skill-title {
+    font-size: 2rem;
+    color: var(--white);
+    text-shadow: 2px 2px 3px var(--blue-shade);
+}
+
+.skill-info {
+    font-size: 1.5rem;
+    color: var(--border);
+    text-shadow: 2px 2px 3px var(--blue-shade);
+}
+
+.icon-title {
+    color: var(--border);
+}
+
+.language-icons1 {
+    display: flex;
+    text-shadow: 2px 2px 3px var(--blue-shade);
+}
+
+.language-icons2 {
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 3px var(--blue-shade);
+}
+
+.parent_div {
+    display: flex;
+    margin-top: 50px;
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    background: var(--border);
+}
+
+.skill-items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: auto;
+    background: var(--light-blue);
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+    border-radius: 10px;
+    margin: 6% 5% 6% 5%;
+}
+
+
+/*Project Section*/
+.proj-title {
+    margin-top: 2%;
+    text-align: center;
+    text-shadow: 2px 2px 3px var(--border);
+    color: var(--darker-blue);
+    font-size: 2rem;
+}
+
+.proj-img-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 5% auto;
+    padding: 2% 0 2% 0;
+}
+
+.first-container {
+    margin-bottom: 0%;
+}
+
+.the-project img {
+    height: auto;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.the-project {
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 0 0 0;
+}
+
+.first-project,
+.first-project img {
+    width: 800px;
+}
+
+.img-title {
+    color: var(--blue-highlight-text);
+    top: 0;
+}
+
+.project-1:hover::after {
+    content: "The aim of this project is to assess my ability to refactor existing code to the horiseon website to make it more accessible which is a common task for front-end and junior developers.";
+    position: absolute;
+    right: 1;
+    color: var(--white);
+    background-color: var(--blue-shade);
+    text-shadow: 2px 2px 3px var(--dark);
+}
+
+.project-2:hover::after {
+    content: "This is a cheat snippet holding code for flex properties in css to use on the go.";
+    position: absolute;
+    right: 1;
+    color: var(--white);
+    background-color: var(--blue-shade);
+    text-shadow: 2px 2px 3px var(--dark);
+}
+
+.project-3:hover::after {
+    content: "This study guide was created for myself as I go through the Rutgers boot camp Prework. It contains notes/tips on HTML, CSS, Git and JavaScript.";
+    position: absolute;
+    right: 1;
+    color: var(--white);
+    background-color: var(--blue-shade);
+    text-shadow: 2px 2px 3px var(--dark);
+}
+
+.the-project img:hover {
+    transition: 1.2s;
+    transform: scale(0.8);
+    filter: blur(3px);
+    cursor: pointer;
+}
+
+.img-p {
+    color: var(--blue-shade);
+    padding-bottom: 10px;
+}
+
+.img-title,
+.img-p {
+    padding-left: 5px;
+}
+
+/*Contact Section*/
+.contact-container {
+    padding: 2% 0 2% 0;
+    background: var(--darker-blue);
+}
+
+.contact-border {
+    background: var(--white);
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+    border-radius: 10px;
+    margin: 30px;
+    padding: 2% 5% 2% 5%;
+}
+
+.contact-title {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    color: var(--border);
+}
+
+.form-row {
+    width: 50%;
+    padding: 10px 0;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-row input {
+/*setting all the flex-boxes to the same size in the container, since they share the same class name I only need to do it once*/
+    flex: 1;
+    font-size: 1.2rem;
+}
+
+.contact-button {
+    margin-top: 1.5%;
+    align-items: center;
+    width: 10%;
+}
+
+/*Footer*/
+footer {
+    background: var(--blue-shade);
+    padding: 1% 0 1% 0;
+    text-align: center;
+    color: var(--white);
+    text-shadow: 2px 2px 3px var(--darker-blue);
+}
+
+.footer-title {
+    font-size: 1rem;
+}
+
+/*Adding Media Queries*/
+@media screen and (max-width: 992px) {
+    .nav-bar ul li a {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 2px;
+        margin-left: 1px;
+    }
+
+    .about-info,
+    .skill-info,
+    .img-p,
+    .icon-title,
+    .form-row input {
+        font-size: 0.95rem;
+    }
+
+    .icon-img {
+        width: 300px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .the-project img {
+        width: 350px;
+    }
+
+    .first-project,
+    .first-project img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar ul li a {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        justify-content: center;
+    }
+
+    .nav-logo,
+    .about-title,
+    .skill-title,
+    .img-title,
+    .contact-title {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 2px;
+        margin-left: 1px;
+    }
+
+    .about-info,
+    .skill-info,
+    .img-p,
+    .icon-title,
+    .form-row input {
+        font-size: 0.8rem;
+    }
+
+    .icon-img {
+        width: 200px;
+        padding-top: 50%;
+    }
+
+    .the-project img {
+        width: 350px;
+    }
+
+    .first-project,
+    .first-project img {
+        width: 400px;
+    }
+
+    .project-1:hover::after,
+    .project-2:hover::after,
+    .project-3:hover::after {
+        right: 0;
+        bottom: 1;
+    }
+
+    .language-icons1,
+    .language-icons2 {
+        flex-direction: column;
+        width: 10%;
+    }
+}
